@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tabla de Alimentos por Edad</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  /* Encabezado */
+  header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(76, 175, 80, 0.8);
+    padding: 25px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 2.4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+
+  header p {
+    font-size: 1.1em;
+    margin-top: 8px;
+    color: #f0f0f0;
+  }
+
+  /* 🔙 Botón de retorno */
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: #1b5e20;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .back-button:hover {
+    background: #4CAF50;
+  }
+
+  /* Tabla */
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffffdd;
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+
+  caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 15px;
+    background: #4CAF50;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  th {
+    background: #81c784;
+    color: #1b5e20;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f1f8e9;
+  }
+
+  .link-container {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .link-container a {
+    text-decoration: none;
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+
+  .link-container a:hover {
+    color: #4CAF50;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 🔙 Botón de regreso -->
+  <header>
+    <a href="index.html" class="back-button">⬅ Volver</a>
+
+    <h1>Alimentos Recomendados por Edad</h1>
+    <p>Guía para una alimentación saludable en cada etapa de la vida</p>
+  </header>
+
+  <!-- Tabla principal -->
+  <table>
+    <caption>Tabla de Recomendaciones</caption>
+    <thead>
+      <tr>
+        <th>Edad</th>
+        <th>Alimentos Recomendados</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0-2 años</td>
+        <td>Leche materna o fórmula, purés de frutas y vegetales, cereales fortificados.</td>
+      </tr>
+      <tr>
+        <td>3-5 años</td>
+        <td>Verduras cocidas, proteínas magras (pollo, pescado), frutas, lácteos.</td>
+      </tr>
+      <tr>
+        <td>6-12 años</td>
+        <td>Verduras crujientes, granos enteros (arroz integral, avena), carne magra, nueces.</td>
+      </tr>
+      <tr>
+        <td>13-18 años</td>
+        <td>Alimentos ricos en calcio (leche, yogur), proteínas para el crecimiento muscular (huevo, carne), frutas y verduras frescas.</td>
+      </tr>
+      <tr>
+        <td>19-40 años</td>
+        <td>Alimentos ricos en fibra (frutas, vegetales), grasas saludables (aguacate, aceite de oliva), proteínas vegetales y animales.</td>
+      </tr>
+      <tr>
+        <td>41-60 años</td>
+        <td>Alimentos bajos en sodio, alimentos ricos en antioxidantes (frutas, té verde), pescado (omega-3).</td>
+      </tr>
+      <tr>
+        <td>60+ años</td>
+        <td>Alimentos ricos en calcio y vitamina D, fibra, proteínas magras, y alimentos fáciles de digerir.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="link-container"></div>
+
+</body>
+</html>

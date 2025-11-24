@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinas de Ejercicio</title>
+
+    <style>
+        /* Paleta elegante */
+        :root {
+            --verde-oscuro: #0f3d2e;
+            --verde-esmeralda: #2ecc71;
+            --verde-mint: #a8f0c6;
+            --verde-suave: #d8f6e7;
+            --blanco: #ffffff;
+            --glass: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-esmeralda));
+            padding: 35px;
+            color: var(--blanco);
+            overflow-x: hidden;
+        }
+
+        /* Enlace de retorno */
+        .volver {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: var(--verde-mint);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.25);
+            transition: 0.3s ease;
+        }
+
+        .volver:hover {
+            background: rgba(255,255,255,0.25);
+            color: var(--blanco);
+        }
+
+        /* Encabezado elegante */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            margin-bottom: 50px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.3em;
+            color: var(--verde-mint);
+            opacity: 0.9;
+        }
+
+        /* Contenedor de tarjetas */
+        .contenedor {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Tarjetas glassmorphism */
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(14px);
+            border-radius: 18px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            transition: 0.4s ease;
+            transform: translateY(0);
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+            border-color: var(--verde-mint);
+        }
+
+        .card h3 {
+            color: var(--verde-mint);
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: var(--verde-suave);
+            font-size: 1.05em;
+        }
+
+        /* Animación */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔙 Enlace de retorno -->
+<a href="gatosaurio.html" class="volver">⬅ Volver a la Página Principal</a>
+
+<header>
+    <h1>Rutinas de Ejercicio</h1>
+    <p>Elegancia, bienestar y movimiento</p>
+</header>
+
+<div class="contenedor">
+
+    <div class="card">
+        <h3>🔥 Bajar de Peso</h3>
+        <ul>
+            <li>30 min caminata rápida o trote</li>
+            <li>20 min HIIT (burpees, climbers, saltos)</li>
+            <li>15 min abdominales + plancha</li>
+            <li>3–5 veces por semana</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>💪 Ganar Músculo</h3>
+        <ul>
+            <li>Sentadillas 4×12</li>
+            <li>Flexiones 4×10</li>
+            <li>Peso muerto con mochila 4×12</li>
+            <li>Fondos en silla 3×15</li>
+            <li>4–5 veces por semana</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🧘 Flexibilidad</h3>
+        <ul>
+            <li>Estiramientos de piernas 15 min</li>
+            <li>Estiramientos columna y cuello 10 min</li>
+            <li>Yoga suave 20 min</li>
+            <li>Diario o 4 veces por semana</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>✨ Tonificar</h3>
+        <ul>
+            <li>Pilates 20 min</li>
+            <li>Sentadillas sin peso 3×20</li>
+            <li>Plancha 3×1 min</li>
+            <li>Saltar cuerda 10 min</li>
+            <li>3–4 veces por semana</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>👵 Adultos Mayores</h3>
+        <ul>
+            <li>Caminata suave 20–30 min</li>
+            <li>Brazos con botellas 3×12</li>
+            <li>Sentarse y levantarse 3×10</li>
+            <li>Estiramientos suaves 10 min</li>
+            <li>5 veces por semana</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🏃 Resistencia</h3>
+        <ul>
+            <li>Saltar cuerda 10 min</li>
+            <li>Correr 20–40 min</li>
+            <li>Bicicleta 30 min</li>
+            <li>Sprints 8×20 s</li>
+            <li>4–6 veces por semana</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

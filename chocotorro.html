@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Consulta Médica</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9dc218;
+  }
+
+  header {
+    background-color: #1f8a70;
+    color: rgb(15, 214, 214);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  header a {
+    color: rgb(15, 214, 214);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 128, 128, 0.5);
+  }
+
+  form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    background: #4caf50;
+    color: white;
+    font-size: 1em;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #45a049;
+  }
+
+  .logo {
+    display: block;
+    margin: 20px auto;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Encabezado con enlace a la página principal -->
+  <header>
+    <a href="index.html">🏠 Volver a la página principal</a>
+  </header>
+  <main>
+    <form onsubmit="return false;">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" placeholder="Tu edad" />
+
+      <label for="sintomas">Síntomas:</label>
+      <textarea id="sintomas" name="sintomas" rows="4" placeholder="Describe tus síntomas"></textarea>
+
+      <label for="fecha">Fecha de consulta (dd/mm/aaaa):</label>
+      <input type="text" id="fecha" name="fecha" placeholder="Ej: 25/10/2025" />
+
+      <button type="submit">Enviar Consulta</button>
+    </form>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalMove - La educación en salud</title>
+    <style>
+        :root {
+            --verde-oscuro: #0B6E4F;
+            --verde-medio: #1FAA59;
+            --verde-claro: #A3E4B8;
+            --verde-fondo: #E8F8EF;
+            --texto: #1B1B1B;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--verde-fondo);
+            color: var(--texto);
+        }
+
+        /* Enlace de retorno */
+        .volver {
+            display: inline-block;
+            background: rgba(31, 170, 89, 0.15);
+            padding: 12px 18px;
+            margin: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--verde-oscuro);
+            border-left: 4px solid var(--verde-medio);
+            transition: 0.3s ease;
+        }
+
+        .volver:hover {
+            background: rgba(31, 170, 89, 0.25);
+            color: #0B6E4F;
+        }
+
+        header {
+            background-color: var(--verde-oscuro);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--verde-medio);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 45px 20px;
+        }
+
+        h2 {
+            color: var(--verde-oscuro);
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 12px;
+            border-left: 6px solid var(--verde-medio);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background-color: var(--verde-oscuro);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔙 Enlace de retorno -->
+    <a href="gatosaurio.html" class="volver">⬅ Volver a la Página Principal</a>
+
+    <header>
+        <h1>VitalMove</h1>
+        <p><strong>La educación en salud</strong></p>
+    </header>
+
+    <nav>
+        <a href="#articulos">Artículos</a>
+        <a href="#videos">Videos</a>
+        <a href="#guias">Guías</a>
+    </nav>
+
+    <section id="articulos">
+        <div class="contenedor">
+            <h2>Artículos</h2>
+
+            <div class="card">
+                <h3>Hábitos saludables para tu día a día</h3>
+                <p>Descubre cómo pequeños cambios como hidratarte, dormir bien y moverte diariamente pueden mejorar tu salud general.</p>
+            </div>
+
+            <div class="card">
+                <h3>Prevención de lesiones en la actividad física</h3>
+                <p>Aprende a calentar adecuadamente, usar calzado correcto y evitar movimientos que puedan lastimar tus articulaciones.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="videos">
+        <div class="contenedor">
+            <h2>Videos</h2>
+
+            <div class="card">
+                <h3>Rutina básica de estiramientos</h3>
+                <p>Video recomendado para relajar músculos y reducir tensión acumulada.</p>
+            </div>
+
+            <div class="card">
+                <h3>Técnica correcta para levantar peso</h3>
+                <p>Aprende cómo evitar lesiones en espalda, hombros y rodillas con una postura adecuada.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="guias">
+        <div class="contenedor">
+            <h2>Guías</h2>
+
+            <div class="card">
+                <h3>Guía para una alimentación equilibrada</h3>
+                <p>Recomendaciones prácticas para crear platos balanceados y mejorar tu energía diaria.</p>
+            </div>
+
+            <div class="card">
+                <h3>Guía de prevención para deportistas</h3>
+                <p>Pasos esenciales para cuidar músculos, articulaciones y desempeño físico.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 VitalMove — Educación en Salud</p>
+    </footer>
+
+</body>
+</html>
