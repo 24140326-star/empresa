@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoreo de Movilidad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e0f5e0;
+      color: #333;
+    }
+    header {
+      background: #ffffff; border: 2px solid #3fa63f;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 20px;
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { color: black; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h2, h3 { margin-top: 0; }
+    ul { padding-left: 20px; }
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      background: white;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Monitoreo de Movilidad</h1>
+      <nav>
+        <a href="#intro">Inicio</a>
+        <a href="#sensores">Sensores</a>
+        <a href="#analisis">Análisis</a>
+        <a href="#terapias">Terapias</a>
+      </nav>
+    </div>
+  </header>  <div class="container">
+    <section id="intro">
+      <h2>Uso de sensores inteligentes y análisis de datos para personalizar terapias</h2>
+      <p>El monitoreo de movilidad permite registrar y analizar cómo se mueve una persona en su vida diaria mediante sensores inteligentes. Estos datos posibilitan que los profesionales de la salud adapten terapias y tratamientos de manera precisa y personalizada.</p>
+    </section><section id="sensores">
+  <h3>Sensores utilizados</h3>
+  <ul>
+    <li>Acelerómetros: detectan movimiento, ritmo y pasos.</li>
+    <li>Giroscopios: analizan orientación y equilibrio.</li>
+    <li>IMU (Unidad de Medición Inercial): combina sensores para estimar marcha y postura.</li>
+    <li>Sensores de presión: evalúan distribución de carga al caminar.</li>
+    <li>GPS: registra movilidad en exteriores.</li>
+  </ul>
+</section>
+
+<section id="analisis">
+  <h3>Proceso de análisis de datos</h3>
+  <ol>
+    <li>Recolección de datos mediante sensores portátiles.</li>
+    <li>Filtrado y limpieza de señales.</li>
+    <li>Extracción de características de movilidad.</li>
+    <li>Modelado con algoritmos de machine learning.</li>
+    <li>Interpretación para generar reportes clínicos.</li>
+  </ol>
+</section>
+
+<section id="terapias">
+  <h3>Personalización de terapias</h3>
+  <ul>
+    <li>Ajuste de intensidad de ejercicios según rendimiento real.</li>
+    <li>Recomendación de rutinas específicas según simetría y estabilidad.</li>
+    <li>Seguimiento remoto del progreso del paciente.</li>
+    <li>Detección temprana de deterioro o mejora.</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 - Monitoreo de Movilidad
+</footer>
+
+  </div>
+<script>
+// Simulación de plataforma funcional: navegación suave y secciones interactivasdocument.querySelectorAll('nav a').forEach(link => { link.addEventListener('click', e => { e.preventDefault(); const target = document.querySelector(link.getAttribute('href')); if (target) { window.scrollTo({ top: target.offsetTop - 20, behavior: 'smooth' }); } }); });
+
+// Ejemplo de módulo funcional: cambio dinámico de modo verde/claro function toggleColorMode() { const body = document.body; const current = body.dataset.mode || 'green'; const next = current === 'green' ? 'light' : 'green'; body.dataset.mode = next;
+
+if (next === 'green') { body.style.background = '#e0f5e0'; } else { body.style.background = '#ffffff'; } } </script>
+
+</body>
+</html>
